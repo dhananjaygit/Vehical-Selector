@@ -1,0 +1,70 @@
+.vehicle-selector {
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+}
+
+.selection-grid {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.form-section {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+select {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-color {
+  color: white;
+  background-color: #34293f;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.selection-result {  
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.list-grid {
+  display: flex;      
+  gap: 9px;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
