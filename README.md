@@ -21,11 +21,15 @@
 
     http://localhost:5173
 
-5. - npm run test
-    it will show test result in cmd
+5. it will show test result in cmd
+    
+    - npm run test
+    
 
-6. - npm run test:ui
-    it will show test result in new tab UI and cmd
+6. it will show test result in new tab UI and cmd
+    
+    - npm run test:ui
+    
 
 
 ## Tech Stack
