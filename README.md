@@ -4,7 +4,7 @@
 
     - git clone <your-repo-url>
 
-    - cd vehicle-selection
+    - cd vehicle-selector
 
 
 2. Install dependencies:
