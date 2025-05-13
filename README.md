@@ -21,13 +21,21 @@
 
     http://localhost:5173
 
+5. - npm run test
+    it will show test result in cmd
+
+6. - npm run test:ui
+    it will show test result in new tab UI and cmd
+
 
 ## Tech Stack
 
 - React + TypeScript
 - HTML5 + CSS
+- Responsive UI
 - Vite (recommended for dev speed)
-- Functional components
+- Functional reusable components
+- vitest and react testing liabrary
 - No external APIs required
 
 ## Test Scenarios

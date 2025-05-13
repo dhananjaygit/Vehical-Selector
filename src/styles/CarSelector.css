@@ -1,52 +1,81 @@
-.vehicle-selector {
-  max-width: 500px;
-  margin: 2rem auto;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 750px;
+  margin: 1rem auto;
   font-family: sans-serif;
 }
 
-.selection-grid {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 12px;
+.main-heading {  
+  font-size: 2.6rem;
+  font-weight: 400;  
+  padding: 0rem 1rem 1rem 1rem;
 }
 
-.form-section {
-  margin-bottom: 1rem;
+.sub-heading {  
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.selection-items {
+  font-size: 1.2rem;
+  border: 1px solid black;
+  border-radius: 10px 10px 0px 0px;  
+}
+
+.dropdown-item {
+  margin: 1rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
 label {
-  display: block;
-  margin-bottom: 0.25rem;
   font-weight: bold;
 }
 
 select {
-  width: 50%;
-  padding: 0.5rem;
+  width: 55%;
+  font-size: 1.2rem;
+  padding: 6px 16px;
   border-radius: 5px;
+  border: 0;
+  outline: 1px solid;
+  border-right: 16px solid transparent;
 }
 
-.form-buttons {
+.button-list {
   display: flex;
   gap: 15px;
   justify-content: flex-end;
-  margin-top: 1rem;
+  border-top: 0px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 10px;
 }
 
 button {
-  padding: 0.5rem 1.5rem;
-  font-weight: bold;
+  padding: 1rem 1.5rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
+  font-size: 1.2rem;
+  margin: 0.4rem;
 }
 
 .button-color {
   color: white;
-  background-color: #34293f;
+  background-color: #134a65;
 }
 
 button:disabled {
@@ -54,17 +83,38 @@ button:disabled {
   cursor: not-allowed;
 }
 
-.selection-result {  
-  margin-top: 2rem;
-  padding: 1rem;
-  border-radius: 5px;
+.vehicle-info {
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr 1fr;
+  gap: 1rem 1rem;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.list-grid {
-  display: flex;      
-  gap: 9px;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
+@media (max-width: 500px) {
+  *{
+    text-align: center;
+  }
+  .container {
+    width: auto;
+    margin: 15px;    
+  }
+  .dropdown-item {    
+    flex-direction: column;
+    align-items: center;
+  }
+  select {
+    width: 100%;  
+  }
+
+  .button-list {
+    justify-content: center;
+  }
+
+  .vehicle-info {
+    grid-template-columns: 1fr;
+  }
+
 }
